@@ -1,13 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Dropdown app</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <section class="wrapper">
+        <div class="dropdown">
+          <button class="dropdown__button">Learn more</p>
+          <p class="dropdown__content is-hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            voluptatum repellendus aliquam, neque aliquid soluta doloremque
+            dignissimos vitae? Corrupti nam temporibus, esse omnis veritatis hic
+            illum neque in. Enim, sapiente.
+          </p>
+        </div>
+      </section>
+
+      <section class="slider">
+             <button class="slider__button slider__previous"> < </button>
+        <div class="slider__content">
+          <div data-image="1" class="image visible" >
+            <img width="500" height="500" src="https://mypetsays.co.uk/cdn/shop/articles/National_Black_Cat_Day.jpg?crop=center&height=1200&v=1695635944&width=1200" alt="Black Cat">
+          </div>
+          <div data-image="2" class="image hidden">
+            <img width="500" height="500" src="https://blog.ferplast.com/wp-content/uploads/2022/11/beautiful-white-cat-with-blue-eyes-2022-11-16-02-05-37-utc.jpg" alt="">
+          </div>
+          <div data-image="3" class="image hidden" >
+            <img width="500" height="500" src="https://upload.wikimedia.org/wikipedia/commons/a/af/A_Calico_cat.jpg" alt="Calico Cat">
+          </div>
+        </div>
+          <button class="slider__button slider__next">></button>
+          <div class="slider__pagination">
+            <div data-image="1" class="slider__dot active"></div>
+            <div data-image="2" class="slider__dot"></div>
+            <div data-image="3" class="slider__dot"></div>
+          </div>
+      </section>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
